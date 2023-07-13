@@ -27,28 +27,39 @@
                 </div>
             </header>
         </div>
-        <section> <!--about class is to place image and about us text into different boxes using flexbox-->
-            <div class="about">
-                <h3>About Us</h3>
-                <img src="images/about1.jpg" alt="table">
-                <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
-                    rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
-                    rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non!Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
-                    rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non!
-                </p>
-            </div>              
-        </setion>
-        <section> <!--about class is to place image and about us text into different boxes using flexbox-->
-            <div class="mission">
-                <h3>Our mission</h3>
-                <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
-                    rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
-                    rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non!Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
-                    rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non!
-                </p>
-            </div>              
-        </setion>
-        
+    
+        <h3>Contact us to learn more</h3>
+            <section>
+                <form action="index.html" method="get" class="form"> <!--form class used to put border on the form-->
+                   <div>
+                        <label for="fullname">Your Name</label>
+                        <br>
+                        <input id="fullname" type="text" name="fullname" class="small"> <!--class small used to change style of input-->
+                   </div>
+                   <div>
+                        <label for="email">Your Email</label>
+                        <br> <!--type email notifies you to enter an email in email format-->
+                        <input id="email" type="email" name="email" class="small"> <!--class small used to change style of input -->
+                   </div>
+                   <div>
+                        <label for="message">Your Message</label>
+                        <br>
+                        <textarea id="message" name="message" class="big"></textarea> <!--class big used to change style of textarea-->
+                   </div>
+                   <h4>Would you like to visit our shop?</h4>
+                   <div>
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="contact" value="yes"> 
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="contact" value="no">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="contact" value="maybe">
+                   </div>
+                   <div>
+                        <button type="submit">Send</button>
+                   </div>
+                </form>
+            </section>
         
         <footer>
             <div class="foot">
