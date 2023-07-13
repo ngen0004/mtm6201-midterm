@@ -1,9 +1,11 @@
 .wrapper{
     margin: auto;
-    width: 90%;    
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.51);    
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color:rgb(242, 226, 228)
 }
 nav a{
     display: inline;
@@ -58,30 +60,52 @@ h1{
     background-color:chocolate;
     color: azure;
     font-size: large;
+    margin-bottom: 4px;
 }
 .orderme{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
     width: 100%;
+    grid-gap: 3px;
 }
 .cakes, .cakess, .cakesss{
-    padding: 0.2rem;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+h2{
+    color:azure;
+}
+.feedback{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.fdback, .views{
+    text-align: center;
+
 }
 .gallery{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
-    
+    height: 300px;   
 }
- .gallery img{
+.gallery img{
     border-radius: 50%;
     max-width: 100%;
     max-height: 100%;
+}
+.goback{
+    text-align: right;
+}
+.feedback, .gallery, .goback{
+    background-color: rgb(98, 115, 107);
+}
+.fa-bounce{
+    color: rgb(49, 13, 55);
+    font-size: 50px;
 }
 .foot{
     background-color: green;
@@ -91,7 +115,6 @@ h1{
     color: azure;
 }
 .copy, .info{
-
     padding: 0.2rem;
     display: flex;
     flex-direction: row;
