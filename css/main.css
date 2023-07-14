@@ -8,23 +8,20 @@ body{
     background-color:rgb(242, 226, 228)
 }
 nav a{
-    display: inline;
+    display: block;
     text-decoration: none;
-    padding: 20px;
     color:aliceblue;
-    font-size: large;
+    padding-bottom: 5px;
 }
 .container{
     background-color: green;
-    padding: 14px;
+    padding: 5px;
     text-align: center;
-    position: relative;
 }
 .logo{
-    padding: 20px;
+    padding: 10px;
 }
 .logo img{
-    position: absolute;
     top: 0;
     left: 0;
     width: 90px;
@@ -33,7 +30,7 @@ nav a{
 .icons{
     position: absolute;
     top: 40px;
-    right: 10px;
+    right: 55px;
 }
 .back img{
     width: 100%;
@@ -48,82 +45,71 @@ h1{
     position: absolute;
     top: 85%;
     color: white;
+    font-size: large;
 }
 .btn{
     text-align: center;
 }
 .order{
     display: inline-block;
-    width: 200px;
-    height: 50px;
+    width: 100px;
+    height: 30px;
     border-radius: 10px;
-    background-color:chocolate;
-    color: azure;
-    font-size: large;
+    background-color:chocolate;    
+    font-size: medium;
     margin-bottom: 4px;
 }
-.orderme{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    width: 100%;
-    grid-gap: 3px;
+.order a{
+    text-decoration: none;
+    color: azure;
 }
-.cakes, .cakess, .cakesss{
+.orderme{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+.orderme img{
+    max-width: 50%;
+    text-align: center;
+}
+.orderme p{
+    font-size: 80%;
 }
 h2{
     color:azure;
 }
-.feedback{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.fdback, .views{
+.fdback, .views, .gallery{
     text-align: center;
     color:cornsilk;
+    font-size: 80%;
 }
-.gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    max-width: 100%;
-    height: 300px;   
-}
-.gallery img{
+.gall img{
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 25%;
     max-height: 100%;
 }
-
 .goback{
     text-align: right;
 }
-.feedback, .gallery, .goback{
+.feedback, .goback{
     background-color: rgb(98, 115, 107);
 }
-
 .fa-bounce{
     color: rgb(49, 13, 55);
-    font-size: 50px;
+    font-size: 20px;
 }
-
 .foot{
     clear: both;
     background-color: green;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
     color: azure;
 }
 .copy, .info{
     padding: 0.2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+
 }
 .foot ul{
     list-style: none;
@@ -180,6 +166,139 @@ h2{
     background-color:#ecf1f0;
     margin-top: 5px;
 }
+.product{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 100%;
+    margin: 10px;
+}
+.product1 {
+    border: 1px solid #222;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.product1 button {
+    width: 50%;
+    text-decoration: none;
+    background-color: #781BAA;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    align-items: flex-end;
+    align-self: center;
+}  
+.product1 img{
+    width: 100px;
+}
+@media screen and (min-width: 800px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color:rgb(242, 226, 228)
+    }
+    nav a{
+        display: inline;
+        text-decoration: none;
+        padding: 20px;
+        color:aliceblue;
+        font-size: large;
+    }
+    .container{
+        background-color: green;
+        padding: 14px;
+        text-align: center;
+        position: relative;
+    }
+    .logo{
+        padding: 20px;
+    }
+    .logo img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 90px;
+        height: 90px;
+    }
+    .icons{
+        position: absolute;
+        top: 40px;
+        right: 20px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .order{
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        background-color:chocolate;    
+        font-size: large;
+        margin-bottom: 4px;
+    }
+    .orderme{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+        grid-gap: 3px;
+    }
+    .orderme img{
+        max-width: 80%;
+    }
+    .orderme p{
+        font-size: 15px;
+    }
+    .feedback{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+    .fdback, .views, .gallery{
+        text-align: center;
+        color:cornsilk;
+        font-size: 15px;
+    }
+    .gallery{
+        align-items: center;
+        width: 100%;
+        height: 300px;   
+    }
+    .gall img{
+        border-radius: 50%;
+        max-width: 17%;
+        max-height: 100%;
+    }
+    .goback{
+        text-align: right;
+    }
+    .feedback, .gallery, .goback{
+        background-color: rgb(98, 115, 107);
+    }    
+    .fa-bounce{
+        color: rgb(49, 13, 55);
+        font-size: 40px;
+    }
+    .foot{
+        clear: both;
+        background-color: green;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        color: azure;
+    }
+    .copy, .info{
+        padding: 0.2rem;
+    }
+
+}
+
+
 
 
 

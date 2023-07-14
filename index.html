@@ -31,18 +31,20 @@
             <img src="images/pic.jpg" alt="backgroundimage">
             <h1 class="animate__animated animate__wobble">Michael's Yummy Bakery</h1>
         </div>
-        <div class="btn"><button class="order" type="submit">Order Now</button></div><!--btn class to align order now button to the center-->
+        <div class="btn"><!--btn class to align order now button to the center-->
+            <button class="order" type="submit"><a href="product.html">Order Now</a></button>
+        </div>
         <div class="orderme"> <!--orderme class puts below images into different layout using grid-->           
             <div class="cakes"> <!--cakes class display elements into boxes using flexbox-->                 
-                <img src="images/cake1.jpg" alt="backgroundimage">
+                <img class="cake1" src="images/cake1.jpg" alt="backgroundimage">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur nisi fugit? Enim, velit omnis. Vero sint exercitationem ex totam quos perferendis sapiente velit sequi minima.</p>
             </div>
             <div class="cakess"><!--cakess class display elements into boxes using flexbox-->
-                <img src="images/cake2.jpg" alt="backgroundimage">
+                <img class="cake2" src="images/cake2.jpg" alt="backgroundimage">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur nisi fugit? Enim, velit omnis. Vero sint exercitationem ex totam quos perferendis sapiente velit sequi minima.</p>
             </div>
             <div class="cakesss"><!--cakesss class display elements into boxes using flexbox-->
-                <img src="images/cake3.jpg" alt="backgroundimage">
+                <img class="cake3" src="images/cake3.jpg" alt="backgroundimage">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex pariatur nisi fugit? Enim, velit omnis. Vero sint exercitationem ex totam quos perferendis sapiente velit sequi minima.</p>
             </div>                                  
         </div>
@@ -59,12 +61,15 @@
                 <p>⭐⭐⭐⭐ </p>
                 <p>15M <i class="fa-solid fa-square-check"></i></p> <!--i class displays check icon-->
             </div>
-        </div>
-        <div class="gallery"> <!--displays images into boxes using flexbox-->
-            <img src="images/celebration1.jpg" alt="backgroundimage">
-            <img src="images/celebration2.jpg" alt="backgroundimage">
-            <img src="images/celebration3.jpg" alt="backgroundimage">
-            <img src="images/celebration4.jpg" alt="backgroundimage">
+            <div class="gallery"> <!--displays images into boxes using flexbox-->
+                <h2>Gallery</h2>
+                <div class="gall">
+                    <img class="gallery1" src="images/celebration1.jpg" alt="backgroundimage">
+                    <img class="gallery2" src="images/celebration2.jpg" alt="backgroundimage">
+                    <img class="gallery3" src="images/celebration3.jpg" alt="backgroundimage">
+                    <img class="gallery4" src="images/celebration4.jpg" alt="backgroundimage">
+                </div>                
+            </div>
         </div>
         <!--top reference helps go back to the top of the page with arrow icon-->        
         <div class="goback"><a href="#top"><i class="fa-solid fa-arrow-up-long fa-bounce fa-xl"></i></a></div>
