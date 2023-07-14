@@ -58,10 +58,53 @@ h1{
     background-color:chocolate;    
     font-size: medium;
     margin-bottom: 4px;
+    animation-name: warnbutton;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.order:hover{
+    animation-name: hoverbutton;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    background: blue;
 }
 .order a{
     text-decoration: none;
     color: azure;
+}
+@keyframes warnbutton{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+@keyframes hoverbutton {
+    10%,
+    25% {
+      transform: scale(1.3, 0.7);
+    }
+  
+    50% {
+      transform: scale(0.5, 2) translate(0, -200px);
+    }
+  
+    60% {
+      transform: scale(1, 1) translate(0, 0);
+    }
+  
+    75% {
+      transform: scale(1.3, 0.7) translate(0, 0);
+    }
+  
+    85% {
+      transform: scale(1, 1) translate(0, 0);
+    }
 }
 .orderme{
     display: flex;
@@ -203,6 +246,35 @@ h2{
 .product1 img{
     max-width: 80%;
 }
+.special{
+    animation-name: jump;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;    
+}
+@keyframes jump {
+    10%,
+    25% {
+      transform: scale(1.3, 0.7);
+      background: rgb(255, 0, 13);
+    }
+  
+    50% {
+      transform: scale(0.5, 2) translate(0, -200px);
+    }
+  
+    60% {
+      transform: scale(1, 1) translate(0, 0);
+      background: rgb(37, 48, 40);
+    }
+  
+    75% {
+      transform: scale(1.3, 0.7) translate(0, 0);
+    }
+  
+    85% {
+      transform: scale(1, 1) translate(0, 0);
+    }
+  }
 @media screen and (min-width: 800px){
     body{
         font-family: Arial, Helvetica, sans-serif;
