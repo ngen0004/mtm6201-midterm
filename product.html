@@ -9,17 +9,17 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container">
-            <header>
-                <div class="logo" id="top"><img src="images/yummy-logo.jpg" alt="logo"></div>
-                <nav>
-                    <a href="index.html">Home</a>
+    <div class="wrapper"> <!--wrapper class to make page content easy to read-->
+        <div class="container"> <!--container class used align nav text and position the logo-->
+            <header role="banner">
+                <div class="logo" id="top"><img src="images/yummy-logo.jpg" alt="logo" aria-details="logoimage"></div>
+                <nav role="navigation">
+                    <a href="index.html">Home</a> <!--navigation links-->
                     <a href="about.html">About</a>
                     <a href="product.html">Products</a>
                     <a href="contact.html">Contact</a>
                 </nav>
-                <div class="icons">
+                <div class="icons"> <!--icons classes used to display specific icons from font library-->
                     <i class="fa-regular fa-user fa-lg"></i>
                     <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
                     <i class="fa-solid fa-cart-shopping fa-lg"></i>
@@ -27,49 +27,48 @@
                 </div>
             </header>
         </div>
-        <section class="sectn">
-            <h3>What's available</h3>
-            <div class="product">                
-                <div class="product1">
-                    <img src="images/cake1.jpg" alt="product image">
+        <section class="sectn" role="region"> <!--sectn class helps adjust margin top of h3 heading-->
+            <h3 role="heading">What's available</h3>
+            <div class="product"> <!--class used as a container of product items(product1) and helps to put items into different sections using grid-->             
+                <div class="product1"> <!--class used to align elements and change border radius-->
+                    <img src="images/cake1.jpg" alt="product image" aria-details="productpicture">
                     <p>Lorem epsum</p>
                     <p>15$</p>
                     <button type="submit">Shop now</button>
                 </div>
-                <div class="product1">
-                    <img src="images/cake2.jpg" alt="product image">
+                <div class="product1"> <!--class used to align elements and change border radius-->
+                    <img src="images/cake2.jpg" alt="product image" aria-details="productpicture">
                     <p>Lorem epsum</p>
                     <p>35$</p>
                     <button type="submit">Shop now</button>
                 </div>
-                <div class="product1">
-                    <img src="images/cake3.jpg" alt="product image">
+                <div class="product1"> <!--class used to align elements and change border radius-->
+                    <img src="images/cake3.jpg" alt="product image" aria-details="productpicture">
                     <p>Lorem epsum</p>
                     <p>10$</p>
                     <button type="submit">Shop now</button>
                 </div>
-                <div class="product1">
-                    <img src="images/cake1.jpg" alt="product image">
+                <div class="product1"> <!--class used to align elements and change border radius-->
+                    <img src="images/cake1.jpg" alt="product image" aria-details="productpicture">
                     <p>Lorem epsum</p>
-                    <p>20$</p>
+                    <p>15$</p>
                     <button type="submit">Shop now</button>
                 </div>
             </div>
-        </section>
-        
-        <footer>
-            <div class="foot">
+        </section>        
+        <footer role="contentinfo">
+            <div class="foot"> <!--foot class helps to layout copyright, info and social media icons into different sections using grid-->
                 <div class="copy">
                     &copy;Michael's Yummy, 2023
                 </div>
                 <div class="info">
-                    <ul>
-                        <li>Phone: +1 613-977-3355</li>
-                        <li>Email: michaelsyummybkry@gmail.com</li>
-                        <li>Address: HWY 155, Elgin</li>
+                    <ul itemscope itemtype="https://schema.org/Person" role="list"> <!--Itemscope defines the scope of an item and Itemtype defines which item added to microdata-->
+                        <li itemprop="phone">Phone: +1 613-977-3355</li>
+                        <li itemprop="email">Email: michaelsyummybkry@gmail.com</li>
+                        <li itemprop="address">Address: HWY 155, Elgin</li>
                     </ul>
                 </div>
-                <div  class="iconfoot">
+                <div  class="iconfoot"> <!--displays social media icons-->
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-whatsapp"></i>

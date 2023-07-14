@@ -9,17 +9,17 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container" >
-            <header>
-                <div class="logo" id="top"><img src="images/yummy-logo.jpg" alt="logo"></div>
-                <nav>
-                    <a href="index.html">Home</a>
+    <div class="wrapper"> <!--wrapper class to make page content easy to read-->
+        <div class="container" > <!--container class used align nav text and position the logo-->
+            <header role="banner">
+                <div class="logo" id="top"><img src="images/yummy-logo.jpg" alt="logo" aria-details="logoimage"></div>
+                <nav role="navigation">
+                    <a href="index.html">Home</a> <!--navigation links-->
                     <a href="about.html">About</a>
                     <a href="product.html">Products</a>
                     <a href="contact.html">Contact</a>
                 </nav>
-                <div class="icons">
+                <div class="icons"> <!--icons classes used to display specific icons from font library-->
                     <i class="fa-regular fa-user fa-lg"></i>
                     <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
                     <i class="fa-solid fa-cart-shopping fa-lg"></i>
@@ -27,51 +27,51 @@
                 </div>
             </header>
         </div>
-        <section class="sectn">
-                <h3>Contact us to learn more</h3>
-                <form action="index.html" method="get" class="form"> <!--form class used to put border on the form-->
-                   <div>
-                        <label for="fullname">Your Name</label>
-                        <br>
-                        <input id="fullname" type="text" name="fullname" class="small"> <!--class small used to change style of input-->
-                   </div>
-                   <div>
-                        <label for="email">Your Email</label>
-                        <br> <!--type email notifies you to enter an email in email format-->
-                        <input id="email" type="email" name="email" class="small"> <!--class small used to change style of input -->
-                   </div>
-                   <div>
-                        <label for="message">Your Message</label>
-                        <br>
-                        <textarea id="message" name="message" class="big"></textarea> <!--class big used to change style of textarea-->
-                   </div>
-                   <h4>Would you like to visit our shop?</h4>
-                   <div class="radio">
-                        <label for="yes">Yes</label>
-                        <input type="radio" id="yes" name="contact" value="yes"> 
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="contact" value="no">
-                        <label for="maybe">Maybe</label>
-                        <input type="radio" id="maybe" name="contact" value="maybe">
-                   </div>
-                   <div>
-                        <button type="submit">Send</button>
-                   </div>
-                </form>
-            </section>
-        <footer>
-            <div class="foot">
+        <section class="sectn" role="region"> <!--sectn class helps adjust margin top of h3 heading-->
+            <h3 role="heading">Contact us to learn more</h3>
+            <form action="index.html" method="get" class="form" role="form"> <!--form class used to put border on the form-->
+                <div>
+                    <label for="fullname">Your Name</label>
+                    <br>
+                    <input id="fullname" type="text" name="fullname" class="small"> <!--class small used to change style of input-->
+                </div>
+                <div>
+                    <label for="email">Your Email</label>
+                    <br> <!--type email notifies you to enter an email in email format-->
+                    <input id="email" type="email" name="email" class="small"> <!--class small used to change style of input -->
+                </div>
+                <div>
+                    <label for="message">Your Message</label>
+                    <br>
+                    <textarea id="message" name="message" class="big"></textarea> <!--class big used to change style of textarea-->
+                </div>
+                <h4 role="heading">Would you like to visit our shop?</h4>
+                <div class="radio"> <!--displays radio inputs and labels in block-->
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="contact" value="yes"> 
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="contact" value="no">
+                    <label for="maybe">Maybe</label>
+                    <input type="radio" id="maybe" name="contact" value="maybe">
+                </div>
+                <div>
+                    <button type="submit">Send</button>
+                </div>
+            </form>
+        </section>
+        <footer role="contentinfo">
+            <div class="foot"> <!--foot class helps to layout copyright, info and social media icons into different sections using grid-->
                 <div class="copy">
                     &copy;Michael's Yummy, 2023
                 </div>
                 <div class="info">
-                    <ul>
-                        <li>Phone: +1 613-977-3355</li>
-                        <li>Email: michaelsyummybkry@gmail.com</li>
-                        <li>Address: HWY 155, Elgin</li>
+                    <ul itemscope itemtype="https://schema.org/Person" role="list"> <!--Itemscope defines the scope of an item and Itemtype defines which item added to microdata-->
+                        <li itemprop="phone">Phone: +1 613-977-3355</li>
+                        <li itemprop="email">Email: michaelsyummybkry@gmail.com</li>
+                        <li itemprop="address">Address: HWY 155, Elgin</li>
                     </ul>
                 </div>
-                <div  class="iconfoot">
+                <div  class="iconfoot"> <!--displays social media icons-->
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-whatsapp"></i>

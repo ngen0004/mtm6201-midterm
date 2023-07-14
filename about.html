@@ -9,17 +9,17 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <div class="container" >
-            <header>
-                <div class="logo" id="top"><img src="images/yummy-logo.jpg" alt="logo"></div>
-                <nav>
-                    <a href="index.html">Home</a>
+    <div class="wrapper"> <!--wrapper class to make page content easy to read-->
+        <div class="container" > <!--container class used align nav text and position the logo-->
+            <header role="banner">
+                <div class="logo" id="top"><img src="images/yummy-logo.jpg" alt="logo" aria-details="logoimage"></div>
+                <nav role="navigation">
+                    <a href="index.html">Home</a> <!--navigation links-->
                     <a href="about.html">About</a>
                     <a href="product.html">Products</a>
                     <a href="contact.html">Contact</a>
                 </nav>
-                <div class="icons">
+                <div class="icons"> <!--icons classes used to display specific icons from font library-->
                     <i class="fa-regular fa-user fa-lg"></i>
                     <i class="fa-sharp fa-solid fa-magnifying-glass fa-lg"></i>
                     <i class="fa-solid fa-cart-shopping fa-lg"></i>
@@ -27,10 +27,10 @@
                 </div>
             </header>
         </div>
-        <section> <!--about class is to place image and about us text into different boxes using flexbox-->
-            <div class="about">
-                <h3>About Us</h3>
-                <img src="images/about1.jpg" alt="table">
+        <section role="region"> 
+            <div class="about"> <!--about class used to make the image float from the left and wrap the text around the image-->
+                <h3 role="heading">About Us</h3>
+                <img src="images/about1.jpg" alt="profilimage" aria-details="picture">
                 <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
                     rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
                     rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non!Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
@@ -40,9 +40,9 @@
                 </p>
             </div>              
         </setion>
-        <section> <!--about class is to place image and about us text into different boxes using flexbox-->
-            <div class="mission">
-                <h3>Our mission</h3>
+        <section role="region"> 
+            <div class="mission"> <!--mission class helps adjust margin top of h3 heading-->
+                <h3 role="heading">Our mission</h3>
                 <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
                     rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
                     rerum sequi mollitia illo voluptate ut architecto rem veniam, esse magnam hic non!Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, quidem quaerat recusandae quos obcaecati fuga iusto deleniti, 
@@ -50,21 +50,19 @@
                 </p>
             </div>              
         </setion>
-        
-        
-        <footer>
-            <div class="foot">
+        <footer role="contentinfo">
+            <div class="foot"> <!--foot class helps to layout copyright, info and social media icons into different sections using grid-->
                 <div class="copy">
                     &copy;Michael's Yummy, 2023
                 </div>
                 <div class="info">
-                    <ul>
-                        <li>Phone: +1 613-977-3355</li>
-                        <li>Email: michaelsyummybkry@gmail.com</li>
-                        <li>Address: HWY 155, Elgin</li>
+                    <ul itemscope itemtype="https://schema.org/Person" role="list"> <!--Itemscope defines the scope of an item and Itemtype defines which item added to microdata-->
+                        <li itemprop="phone">Phone: +1 613-977-3355</li>
+                        <li itemprop="email">Email: michaelsyummybkry@gmail.com</li>
+                        <li itemprop="address">Address: HWY 155, Elgin</li>
                     </ul>
                 </div>
-                <div  class="iconfoot">
+                <div  class="iconfoot"> <!--displays social media icons-->
                     <i class="fa-brands fa-facebook"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-whatsapp"></i>
