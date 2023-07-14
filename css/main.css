@@ -132,7 +132,10 @@ h2{
 }
 .text1{
     clear: right;
-    padding: 5px;=
+    padding: 5px;
+}
+.text1, .text2{
+    font-size: 10px;
 }
 .mission{
     clear: both;
@@ -141,10 +144,14 @@ h2{
 .mission h3{
     margin-top: 50px;
 }
+.sectn h3{
+    margin-left: 10px;
+}
 .form{
     border: 1px solid black;
     margin: 20px;
     padding: 20px;
+    font-size: 12px;
 }
 /*sets the style of the input text width and places them in blocks*/
 .small{
@@ -158,8 +165,11 @@ h2{
     width: 100%;
     padding: 20px 2px;
     margin: 5px 0;
-    display: inline-block;
+    display: block;
     resize: none; /*removes the right of the user to resize the textarea*/
+}
+.radio label, input{
+    display: block;
 }
 /*sets space on top of button*/
 .form button{
@@ -168,23 +178,19 @@ h2{
 }
 .product{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr;
-    grid-gap: 10px;
-    max-width: 100%;
+    grid-gap: 5px;
+    width: 100%;
     margin: 10px;
 }
-.product1 {
+.product1{
     border: 1px solid #222;
     border-radius: 8px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     text-align: center;
+    max-width: 90%;
 }
 .product1 button {
-    width: 50%;
+    width: 30%;
     text-decoration: none;
     background-color: #781BAA;
     color: white;
@@ -192,9 +198,10 @@ h2{
     border-radius: 8px;
     align-items: flex-end;
     align-self: center;
+    margin-bottom: 5px;
 }  
 .product1 img{
-    width: 100px;
+    max-width: 80%;
 }
 @media screen and (min-width: 800px){
     body{
@@ -294,6 +301,43 @@ h2{
     }
     .copy, .info{
         padding: 0.2rem;
+    }
+    .product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 5px;
+        width: 100%;
+        margin: 10px;
+    }
+    .product1{
+        border: 1px solid #222;
+        border-radius: 8px;
+        text-align: center;
+        max-width: 90%;
+        }
+    .product1 button {
+        width: 50%;
+        text-decoration: none;
+        background-color: #781BAA;
+        color: white;
+        padding: 1rem;
+        border-radius: 8px;
+        align-items: flex-end;
+        align-self: center;
+        margin-bottom: 5px;
+    }  
+    .product1 img{
+        max-width: 80%;
+    }
+    .text1, .text2{
+        font-size: 15px;
+    }
+    .form{
+        font-size: 17px;
+    }
+    .radio label, input{
+        display: inline;
     }
 
 }
